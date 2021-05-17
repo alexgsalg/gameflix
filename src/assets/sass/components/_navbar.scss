@@ -1,0 +1,36 @@
+.navbar {
+  padding: 3.5rem 2rem;
+
+  .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    @include dflex(space-between, center, nowrap);
+    gap: 3rem;
+  }
+
+  &__logo {
+    width: 4.5rem;
+  }
+
+  &_actionbar {
+    @include dflex(center, center, nowrap);
+    gap: 3rem;
+    flex: 1;
+  }
+
+  &_search {
+    @include dflex(space-between, center, nowrap);
+    width: 100%;
+    max-width: 450px;
+
+    &__input {
+      flex: 1;
+      padding: 1.6rem 1.4rem;
+    }
+  }
+
+  &_menu {
+    &__link {
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@mixin dflex($justify, $align, $wrap: wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin fontStyle($size, $line, $weight: 400) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: $weight;
+}
