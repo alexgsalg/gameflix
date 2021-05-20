@@ -1,6 +1,10 @@
 .navbar {
   padding: 3.5rem 2rem;
+<<<<<<< HEAD
 
+=======
+  background-color: $darkMarine;
+>>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
   .wrapper {
     max-width: 1400px;
     margin: 0 auto;
@@ -22,15 +26,104 @@
     @include dflex(space-between, center, nowrap);
     width: 100%;
     max-width: 450px;
+<<<<<<< HEAD
 
     &__input {
       flex: 1;
       padding: 1.6rem 1.4rem;
+=======
+    padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+    background-color: $darker;
+
+    &__input {
+      flex: 1;
+      background-color: transparent;
+      border: none;
+      @include fontStyle(16px, 1.2, 500);
+      color: $softWhite;
+      font-family: $manrope;
+      letter-spacing: 0.02rem;
+
+      &::placeholder {
+        color: rgba($softWhite, 0.9);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+    &__btn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      svg {
+        stroke: $softWhite;
+        transition: all ease-in-out 150ms;
+      }
+
+      &:hover {
+        svg {
+          stroke: $purple;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+>>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
     }
   }
 
   &_menu {
+<<<<<<< HEAD
     &__link {
+=======
+    @include dflex(center, center, nowrap);
+    gap: 3rem;
+
+    &__link {
+      @include dflex(center, center, nowrap);
+      padding: 0.8rem 3rem;
+      color: $softWhite;
+      @include fontStyle(1.6rem, 1.2, 500);
+      transition: all ease-in-out 150ms;
+
+      svg {
+        stroke: $softWhite;
+        margin-right: 0.8rem;
+        transition: all ease-in-out 150ms;
+      }
+
+      &:hover {
+        color: $purple;
+
+        svg path {
+          stroke: $purple;
+        }
+      }
+    }
+  }
+  &_user {
+    @include dflex(flex-end, center, nowrap);
+
+    &__name {
+      @include fontStyle(1.2rem, 1.2, 500);
+      text-align: right;
+
+      span {
+        display: block;
+        @include fontStyle(1.4rem, 1.3);
+      }
+    }
+
+    &__avatar {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 0.8rem;
+>>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
     }
   }
 }

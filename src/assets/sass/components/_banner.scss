@@ -1,0 +1,54 @@
+.banner {
+  width: 100%;
+  padding: 2rem 2.5rem;
+  @include dflex(flex-start, flex-start, nowrap);
+  gap: 5rem;
+
+  &_header {
+    &__title {
+      margin: 0 0 1.5rem 0;
+      font-family: $quantico;
+      @include fontStyle(4rem, 1.2);
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $quantico;
+      @include fontStyle(1.6rem, 1.2);
+      text-transform: uppercase;
+    }
+  }
+
+  &_count {
+    &__title {
+      margin: 1.8rem 0 1.5rem 0;
+      font-family: $quantico;
+      @include fontStyle(2.4rem, 1.2);
+      text-transform: uppercase;
+    }
+  }
+
+  &_couter {
+    @include dflex(flex-start, center);
+    gap: 0.8rem;
+
+    &__icon {
+      padding: 5px;
+      background-color: $pink;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+
+      svg {
+        stroke: $softWhite;
+      }
+    }
+
+    &__number {
+      margin: 0;
+      font-family: $quantico;
+      @include fontStyle(2rem, 1.2);
+      text-transform: uppercase;
+    }
+  }
+}
