@@ -8,13 +8,15 @@ function App() {
     <div className="app">
       <Navbar />
       <main className="main">
-        <div class="content">
-          <Banner />
-          Content
+        <div className="wrapper">
+          <div className="content">
+            <Banner />
+            Content
+          </div>
+          <sidebar className="sidebar">
+            sidebar
+          </sidebar>
         </div>
-        <sidebar className="sidebar">
-          sidebar
-        </sidebar>
       </main>
     </div>
   );
