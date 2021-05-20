@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { ReactComponent as Clock } from '../assets/icons/Clock.svg';
+import money from '../assets/images/money.png';
 
 function Banner() {
   return (
@@ -20,6 +21,8 @@ function Banner() {
           <p className="banner_couter__number">00:10:00</p>
         </div>
       </div>
+      <img src={money} className="banner__img" />
+      
     </div>
   )
 }

@@ -8,8 +8,13 @@ function App() {
     <div className="app">
       <Navbar />
       <main className="main">
-        <Banner />
-
+        <div class="content">
+          <Banner />
+          Content
+        </div>
+        <sidebar className="sidebar">
+          sidebar
+        </sidebar>
       </main>
     </div>
   );
