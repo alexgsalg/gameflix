@@ -13,11 +13,11 @@ function Banner() {
       </div>
       <div className="banner_count">
         <p className="banner_count__title">Finaliza em:</p>
-        <div className="banner__couter">
-          <span>
+        <div className="banner_couter">
+          <span className="banner_couter__icon">
             <Clock />
           </span>
-          <p>00:10:00</p>
+          <p className="banner_couter__number">00:10:00</p>
         </div>
       </div>
     </div>

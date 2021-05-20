@@ -27,4 +27,28 @@
       text-transform: uppercase;
     }
   }
+
+  &_couter {
+    @include dflex(flex-start, center);
+    gap: 0.8rem;
+
+    &__icon {
+      padding: 5px;
+      background-color: $pink;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+
+      svg {
+        stroke: $softWhite;
+      }
+    }
+
+    &__number {
+      margin: 0;
+      font-family: $quantico;
+      @include fontStyle(2rem, 1.2);
+      text-transform: uppercase;
+    }
+  }
 }
