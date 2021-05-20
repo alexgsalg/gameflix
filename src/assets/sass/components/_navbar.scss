@@ -1,10 +1,6 @@
 .navbar {
   padding: 3.5rem 2rem;
-<<<<<<< HEAD
-
-=======
   background-color: $darkMarine;
->>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
   .wrapper {
     max-width: 1400px;
     margin: 0 auto;
@@ -26,12 +22,6 @@
     @include dflex(space-between, center, nowrap);
     width: 100%;
     max-width: 450px;
-<<<<<<< HEAD
-
-    &__input {
-      flex: 1;
-      padding: 1.6rem 1.4rem;
-=======
     padding: 1.6rem 2.4rem 1.6rem 1.6rem;
     background-color: $darker;
 
@@ -71,14 +61,10 @@
       &:focus {
         outline: none;
       }
->>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
     }
   }
 
   &_menu {
-<<<<<<< HEAD
-    &__link {
-=======
     @include dflex(center, center, nowrap);
     gap: 3rem;
 
@@ -123,7 +109,6 @@
       border-radius: 50%;
       object-fit: cover;
       margin-left: 0.8rem;
->>>>>>> 2fc649f9975072db29f716fa372786a93bc426c6
     }
   }
 }
