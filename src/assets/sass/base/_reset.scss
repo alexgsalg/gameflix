@@ -6,8 +6,11 @@
   line-height: 1.2;
 }
 
-body {
+html {
   font-family: $manrope;
+}
+
+body {
   background-color: $dark;
   color: $softWhite;
 }
