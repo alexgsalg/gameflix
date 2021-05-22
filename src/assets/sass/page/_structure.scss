@@ -1,4 +1,13 @@
 .main {
-  padding: 2.6rem;
-  display: grid;
+  .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2.6rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .sidebar {
+  }
 }
