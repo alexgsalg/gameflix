@@ -1,8 +1,30 @@
 .banner {
-  width: 100%;
+  position: relative;
   padding: 2rem 2.5rem;
   @include dflex(flex-start, flex-start, nowrap);
   gap: 5rem;
+  width: 100%;
+  background-color: $white;
+  text-align: left;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    border-style: solid;
+    border-width: 20rem 30rem 0px 0;
+    border-color: transparent $pink transparent transparent;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
 
   &_header {
     &__title {
@@ -10,12 +32,14 @@
       font-family: $quantico;
       @include fontStyle(4rem, 1.2);
       text-transform: uppercase;
+      color: $dark;
     }
 
     p {
       font-family: $quantico;
       @include fontStyle(1.6rem, 1.2);
       text-transform: uppercase;
+      color: $dark;
     }
   }
 
@@ -25,6 +49,7 @@
       font-family: $quantico;
       @include fontStyle(2.4rem, 1.2);
       text-transform: uppercase;
+      color: $dark;
     }
   }
 
@@ -49,6 +74,13 @@
       font-family: $quantico;
       @include fontStyle(2rem, 1.2);
       text-transform: uppercase;
+      color: $dark;
     }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: -1rem;
   }
 }
