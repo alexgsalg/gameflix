@@ -3,8 +3,17 @@
   padding: 2rem 2.5rem;
   @include dflex(flex-start, flex-start, nowrap);
   gap: 5rem;
+  width: 100%;
   background-color: $white;
+  text-align: left;
   overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   &:before {
     content: "";
@@ -25,7 +34,7 @@
       text-transform: uppercase;
       color: $dark;
     }
-    
+
     p {
       font-family: $quantico;
       @include fontStyle(1.6rem, 1.2);
@@ -33,7 +42,7 @@
       color: $dark;
     }
   }
-  
+
   &_count {
     &__title {
       margin: 1.8rem 0 1.5rem 0;
@@ -43,23 +52,23 @@
       color: $dark;
     }
   }
-  
+
   &_couter {
     @include dflex(flex-start, center);
     gap: 0.8rem;
-    
+
     &__icon {
       padding: 5px;
       background-color: $pink;
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      
+
       svg {
         stroke: $softWhite;
       }
     }
-    
+
     &__number {
       margin: 0;
       font-family: $quantico;

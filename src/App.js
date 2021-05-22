@@ -12,14 +12,14 @@ function App() {
       <Navbar />
       <main className="main">
         <div className="wrapper">
+          <sidebar className="sidebar">
+            <h4>Categories</h4>
+          </sidebar>
           <div className="content">
             {countdown ? <Banner setCountdown={setCountdown} /> : null}
 
             Content
           </div>
-          <sidebar className="sidebar">
-            sidebar
-          </sidebar>
         </div>
       </main>
     </div>
