@@ -17,9 +17,9 @@ function App() {
 
             Content
           </div>
-          <sidebar className="sidebar">
+          {/* <sidebar className="sidebar">
             sidebar
-          </sidebar>
+          </sidebar> */}
         </div>
       </main>
     </div>
