@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 
 //Images
 import { ReactComponent as Logo } from '../assets/images/clapperboard.svg';
