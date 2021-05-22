@@ -8,8 +8,12 @@ function Banner({ setCountdown }) {
   const [timer, setTimer] = useState("");
 
   useEffect(() => {
-    let countdownDate = new Date("Dec 01, 2021 00:00:00").getTime();
-    // let countdownDate = new Date("May 22, 2021 10:59:10").getTime();
+    const today = new Date();
+    const dueDate = new Date();
+    const countdownDate = dueDate.setDate(today.getDate() + 1);
+    //Determined Date
+    // let countdownDate = new Date("Dec 01, 2021 00:00:00").getTime();
+
     //Update every second
     let x = setInterval(function () {
       //Get today date and time
@@ -24,7 +28,7 @@ function Banner({ setCountdown }) {
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
       setTimer(
-        (days + (days > 1 ? " days " : " day ")) +
+        // (days + (days > 1 ? " days " : " day ")) +
         (hours > 9 ? hours : "0" + hours) + ":" +
         (minutes > 9 ? minutes : "0" + minutes) + ":" +
         (seconds > 9 ? seconds : "0" + seconds)
@@ -42,7 +46,7 @@ function Banner({ setCountdown }) {
 
   return (
 
-    <div className="banner">
+    <button className="banner">
       <div className="banner_header">
         <h2 className="banner_header__title">
           Aproveite agora
@@ -63,7 +67,7 @@ function Banner({ setCountdown }) {
       </div>
       <img src={money} className="banner__img" />
 
-    </div>
+    </button>
 
   )
 }
