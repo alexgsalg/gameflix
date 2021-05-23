@@ -7,6 +7,8 @@ import { ReactComponent as Star } from '../assets/icons/Star.svg';
 import { ReactComponent as Discount } from '../assets/icons/Discount.svg';
 import Avatar from '../assets/images/Avatar.jpg'
 
+export default function Navbar() {
+
 function Navbar() {
 
   const userName = 'Alex Salgado';
@@ -16,6 +18,7 @@ function Navbar() {
         <Logo className="navbar__logo" />
         <div className="navbar_actionbar">
           <form className="navbar_search">
+
             <input type="text" name="search'" id="search" className="navbar_search__input" placeholder="Search game..." />
             <button className="navbar_search__btn"><Search /></button>
           </form>
@@ -32,5 +35,4 @@ function Navbar() {
     </header>
   )
 }
-
 export default Navbar;
