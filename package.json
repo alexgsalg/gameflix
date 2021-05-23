@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "fs": "^0.0.1-security",
     "node-sass": "^6.0.0",
     "sass": "^1.32.13"
   }
