@@ -7,8 +7,6 @@ import { ReactComponent as Star } from '../assets/icons/Star.svg';
 import { ReactComponent as Discount } from '../assets/icons/Discount.svg';
 import Avatar from '../assets/images/Avatar.jpg'
 
-export default function Navbar() {
-
 function Navbar() {
 
   const userName = 'Alex Salgado';
