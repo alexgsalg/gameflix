@@ -6,6 +6,7 @@ import gamelist from './api/freegame.json'
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Sidebar from './components/Sidebar';
+import Card from './components/Card';
 
 function App() {
   const games = gamelist.games;
@@ -25,15 +26,14 @@ function App() {
           <Sidebar games={games} />
           <div className="content">
             {countdown ? <Banner setCountdown={setCountdown} /> : null}
-            {filteredGames.map(item => {
-              return (
-                <div>
-                  <p>{item.title}</p>
-                  <p>{item.genre}</p>
-                  <br />
-                </div>
-              )
-            })}
+            <div className="gamegrid">
+              {filteredGames.map(item => {
+                return (
+                  <Card item={item} />
+                )
+              })}
+            </div>
+
             Content
                 </div>
         </div>
