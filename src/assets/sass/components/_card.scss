@@ -1,3 +1,90 @@
 .game {
   position: relative;
+  height: 300px;
+  @include dflex(flex-end, unset);
+  flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 1.5rem;
+
+  &:hover {
+    .game__img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+
+    stroke: $softWhite;
+
+    &:hover,
+    &.favorite {
+      stroke: $yellow;
+      fill: $yellow;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 250ms;
+    z-index: -1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba($dark, 0.9),
+      rgba($dark, 0.4)
+    );
+    // background-color: rgba($dark, 0.5);
+    z-index: -1;
+  }
+
+  &__title {
+    @include fontStyle(2.2rem, 1.2, bold);
+    color: $softWhite;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__genre {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    font-family: $quantico;
+    @include fontStyle(1.5rem, 1.2, 400);
+    color: $lightGray;
+    letter-spacing: 0.05rem;
+  }
+
+  &__btn {
+    width: auto;
+    padding: 1.2rem 3rem;
+    background-color: $darkPurple;
+    border-radius: 3px;
+    @include fontStyle(1.5rem, 1.2, 600);
+    color: $softWhite;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    transition: all ease-in 200ms;
+
+    &:hover {
+      background-color: $purple;
+    }
+  }
 }
