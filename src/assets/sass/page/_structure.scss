@@ -8,3 +8,9 @@
     grid-gap: 4rem;
   }
 }
+
+.gamegrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
