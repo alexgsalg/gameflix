@@ -6,6 +6,7 @@
   border-radius: 3px;
   overflow: hidden;
   padding: 1.5rem;
+  animation: showCard 250ms ease-in;
 
   &:hover {
     .game__img {
@@ -86,5 +87,14 @@
     &:hover {
       background-color: $purple;
     }
+  }
+}
+
+@keyframes showCard {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

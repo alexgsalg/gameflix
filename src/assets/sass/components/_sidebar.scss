@@ -22,7 +22,7 @@
     &_list {
       &__item {
         width: 100%;
-        padding: 1rem 1rem 1rem 0;
+        padding: 1.5rem 1rem 1.5rem 0;
         background-color: transparent;
         border: none;
         border-left: 0 solid transparent;
@@ -38,6 +38,10 @@
           padding-left: 0.8rem;
           color: $white;
           border-left: 3px solid $purple;
+        }
+
+        &:focus {
+          outline: none;
         }
       }
     }

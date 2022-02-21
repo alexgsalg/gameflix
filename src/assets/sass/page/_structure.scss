@@ -14,3 +14,36 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
 }
+
+.button-container {
+  width: 100%;
+  margin: 5rem 1rem;
+  text-align: center;
+
+  .button {
+    padding: 1.2rem 5rem;
+    background-color: #715e97;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fdfdfd;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    transition: all ease-in 200ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $purple;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.disabled {
+    display: none;
+  }
+}
